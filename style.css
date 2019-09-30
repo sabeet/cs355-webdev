@@ -1,15 +1,20 @@
-body {background-color: black;}
+body {
+    background-color: black;
+}
 
 .navbar{
+    position: relative;
     color: beige;
     font-family: 'Indie Flower', cursive;
     font-size: 20px;
+    
 }
 
 .navbar:hover{
     color: rgb(241, 134, 63);
     font-family: 'Indie Flower', cursive;
     transition: .3s;
+
 }
 
 .dropdown-item { text-align: left; }
