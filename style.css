@@ -1,7 +1,7 @@
 body {background-color: black;}
 
 .navbar{
-    color: rgba(240, 245, 220, 0.596);
+    color: beige;
     font-family: 'Indie Flower', cursive;
     font-size: 20px;
 }
@@ -10,15 +10,6 @@ body {background-color: black;}
     color: rgb(241, 134, 63);
     font-family: 'Indie Flower', cursive;
     transition: .3s;
-
 }
-
-.navbar::active{
-    color: rgba(240, 245, 220, 0.596);
-    font-family: 'Indie Flower', cursive;
-    transition: .3s;
-
-}
-
 
 .dropdown-item { text-align: left; }
