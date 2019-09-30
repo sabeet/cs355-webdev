@@ -1,5 +1,14 @@
 body {background-color: black;}
 
 .navbar{
-    opacity: 9%;
+    color: rgba(240, 245, 220, 0.596);
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+}
+
+.navbar:hover{
+    color: rgb(241, 134, 63);
+    font-family: 'Indie Flower', cursive;
+    transition: .3s;
+
 }
