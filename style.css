@@ -1,5 +1,6 @@
 body {
     background-color: black;
+    color: beige;
 }
 
 .navbar{
@@ -26,8 +27,6 @@ body {
     color: #487cff;
 }
 
-.first-box{
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
+.second-box{
+    color:beige;
 }
