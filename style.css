@@ -1,6 +1,11 @@
 body {
     background-color: black;
     color: beige;
+    font-family: 'Indie Flower', cursive;
+    background: linear-gradient(#0b0b0b, #252e96);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
 }
 
 .navbar{
@@ -29,4 +34,28 @@ body {
 
 .second-box{
     color:beige;
+}
+
+.type{
+    text-align: center;
+    margin: 20%;
+    
+}
+
+button{
+    text-align: center;
+    background: none;
+    color: beige;
+    width: 120px;
+    height: 40px;
+    border: 1 px solid cyan;
+    font-size: 15px;
+    border-radius: 20px;
+    transition: .6s;
+    overflow: hidden;
+}
+
+.particles-js{
+    position: relative;
+    z-index: 3;
 }
