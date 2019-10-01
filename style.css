@@ -1,10 +1,9 @@
-body {
-    background-color: black;
+body{
     color: beige;
     font-family: 'Indie Flower', cursive;
-    background: linear-gradient(#0b0b0b, #252e96);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: darkblue !important;
+    background-repeat: no-repeat !important;
+    background-attachment:   fixed !important;
     
 }
 
