@@ -1,7 +1,7 @@
 body{
     color: beige;
     font-family: 'Indie Flower', cursive;
-    background: darkblue !important;
+    background-color: darkblue !important;
     background-repeat: no-repeat !important;
     background-attachment:   fixed !important;
     
@@ -33,6 +33,7 @@ body{
 
 .second-box{
     color:beige;
+    z-index: 2;
 }
 
 .type{
@@ -54,7 +55,17 @@ button{
     overflow: hidden;
 }
 
-.particles-js{
+#particles-js {
+    background-color: darkblue;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  #overlay {
     position: relative;
-    z-index: 3;
-}
+    padding: 50px;
+  }
