@@ -1,6 +1,6 @@
 body{
     color: beige;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Rajdhani', sans-serif;
     background-color: darkblue !important;
     background-repeat: no-repeat !important;
     background-attachment:   fixed !important;
@@ -10,7 +10,7 @@ body{
 .navbar{
     position: relative;
     color: beige;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Rajdhani', sans-serif;
     font-size: 20px;
     text-decoration: none;
     
@@ -19,7 +19,7 @@ body{
 
 .navbar:hover{
     color: rgb(241, 134, 63);
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Rajdhani', sans-serif;
     transition: .3s;
     text-decoration: none;
 
