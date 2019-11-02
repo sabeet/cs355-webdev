@@ -69,3 +69,13 @@ button{
     position: relative;
     padding: 50px;
   }
+
+.gsc-control-cse.gsc-control-cse-en{
+    
+    background: rgba(255, 255, 255, 0);
+    border: .1px solid rgba(255, 255, 255, 0);
+    border-bottom: none;
+    padding: 10;
+    margin: 0;
+    
+}
