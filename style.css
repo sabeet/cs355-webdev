@@ -79,3 +79,12 @@ button{
     margin: 0;
     
 }
+
+.gsc-input-box{
+
+    border-radius: 50px;
+}
+
+.gs-bidi-start-align.gs-snippet{
+    color:beige;
+}
