@@ -7,7 +7,7 @@ function myFunction(){
             //      
            var output = '';
             for(var i=0; i< items.length; i++){
-            output += items[i].title + "<br>" + items[i].link + "<br>" + items[i].snippet + "<br>" + "<br>";
+            output += '<input type="checkbox" value="items[i]"></input>' + items[i].title + "<br>" + " " + items[i].link + "<br>" + items[i].snippet + "<br>" + "<br>";
         }
         document.getElementById('smth').innerHTML = output;
     //
