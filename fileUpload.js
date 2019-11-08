@@ -1,3 +1,4 @@
+function fileToHtml(){
 function fileUpload() {
     var x = document.getElementById("myFile");
     
@@ -8,3 +9,4 @@ function result(){
     obj.Results[0].title + "<br>" + obj.Results[0].url + "<br>" + obj.Results[0].description;
     }
   }
+}
