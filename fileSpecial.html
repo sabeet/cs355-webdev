@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="particles.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+    <script src="selec.js"></script>
+    <script src="writef.js"></script>
+    <title>File Search | CS355</title>
+</head>
+
+<body>
+        <div id="particles-js"></div>
+    
+        <nav class ="navbar navbar-expand-sm navbar-dark bg-transparent">
+            <a class="navbar" href="index.html"><span class="something">Sabeet<span class="period">.</span>me</span></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarMenu">
+    
+            <!--Course-->
+             <ul class="navbar-nav ml-auto" >
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target">Course<span class="caret"></span></a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown_target">
+                        <a class="dropdown-item" href="https://learn.zybooks.com/zybook/CUNYCSCI355TeitelmanFall2019">Zybooks</a>
+                        <a class="dropdown-item" href="https://app.tophat.com/e/648883/lecture/">TopHat</a>
+                        <a class="dropdown-item" href="https://tinyurl.com/CSCI355-Fall2019">Google Drive</a>
+                        <a class="dropdown-item" href="https://www.w3schools.com/howto/howto_js_topnav_responsive.asp">W3Schools</a>
+                        <a class="dropdown-item" href="https://getbootstrap.com/">Bootstrap</a>
+                    </div>
+                </li>
+            <!--Search-->
+            
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target">Search<span class="caret"></span></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown_target">
+                            <a class="dropdown-item" href="fileSpecial.html">File</a>
+                            <a class="dropdown-item" href="google.html">Google API</a>
+                        </div>
+                    </li>
+            <!--Browser-->
+            
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target">Browser<span class="caret"></span></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown_target">
+                            <a class="dropdown-item" href="navigator.html">Navigator</a>
+                            <a class="dropdown-item" href="window.html">Window</a>
+                            <a class="dropdown-item" href="screen.html">Screen</a>
+                            <a class="dropdown-item" href="location.html">Location</a>
+                            <a class="dropdown-item" href="geolocation.html">Geolocation</a>
+                        </div>
+                    </li>
+            <!--About-->
+            
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target">About<span class="caret"></span></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown_target">
+                            <a class="dropdown-item" href="sabeet.html">Sabeet</a>
+                            <a class="dropdown-item" href="contact.html">Contact</a>
+                            <a class="dropdown-item" href="https://www.youtube.com/watch?v=fgMmn1fgKJY&list=PLxf4uqRlOvr3r56MdpMmnKTEtCza3UzB3">FourPlus</a>
+                        </div>
+                    </li>
+    
+            <!--Search Bar-->
+                    
+                      </ul>
+            </div>
+        </nav>
+        
+
+                  
+                    <br>
+                    <br>
+                    <a class="b">In this section, you're able to upload special CSV,JSON,XML files. The files are then displayed<br>below and you may select them by clicking the textbox. You can download the selected items<br> as a CSV,JSON, or XML file</a>
+                    <br>
+                    <br>
+                    <input type="file" id="upfile" accept=".csv,.json,.xml">
+                  
+                    <br>
+                    <br>
+                    <button type="button" onclick="selectAll()">Select All</button>
+                    <button type="button" onclick="deselectAll()">Deselect All</button>
+                    <br>
+                  
+                    <button type="button" onclick="writeJSON()">Export JSON</button>
+                    <button type="button" onclick="writeCSV()">Export CSV</button>
+                    <button type="button" onclick="writeXML()">Export XML</button>
+                    <br>
+                    <a class="a" style="display: none; width: fit-content;" href="" id="a" download>Click here to Download your file</a>
+                    <br><br>
+                    <div class="results"></div>
+                    <br>
+                  
+                  <script src="pp.js"></script>
+
+                  <script>
+                        particlesJS.load('particles-js','particlesjs-config.json', function(){console.log('particles.json loaded...')})
+                           </script>
+                           
+                       
+               
+               <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+               <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+               <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+               
+
+</body>
+
+</html>

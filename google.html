@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="selec.js"></script>
+    <script src="writef.js"></script>
     <script src="particles.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
-    <title>Sabeet | CS355</title>
+    <title>Google API | CS355</title>
 </head>
 
 <body>
 
-        <div id="particles-js"></div>
+    <div id="particles-js"></div>
 
     <nav class ="navbar navbar-expand-sm navbar-dark bg-transparent">
         <a class="navbar" href="index.html"><span class="something">Sabeet<span class="period">.</span>me</span></a>
@@ -72,26 +74,39 @@
                   </ul>
         </div>
     </nav>
+             <br>
+             <br>
+             In this section, we use REST and AJAX to invoke the Google CSE API. This allows the website <br>to grab custom query files from Google. The results are entered into the website. You can <br>select each individual result and export each result as either a CSV,JSON, or XML file.
+             <br>
+             <br>
+             <form id="searchbar" action="javascript:void(0);">
+               <input type="text"  placeholder="Google Search" name="search">
+               <button type="submit" >Search</button>
+             </form>
 
-    
-    <div class="h1-responsive font-weight-bold text-center my-4">
-        <p><h4 class="h1-responsive font-weight-bold text-center my-4">Upload a CSV,XML, or JSON file here</h4></p>
-        <p> 
-           <!--Content-->
+             <button type="button" onclick="selectAll()">Select All</button>
+               <button type="button" onclick="deselectAll()">Deselect All</button>
+             <br>
+             <button type="button" onclick="writeJSON()">JSON</button>
+             <button type="button" onclick="writeCSV()">CSV</button>
+             <button type="button" onclick="writeXML()">XML</button>
+             <br>
+             <a class="a" style="display: none; width: fit-content;" href="" id="a" download>Click me to Download your file</a>
+             <br><br>
+             
 
-           <input type="file" id="myFile" name="myFile" accept=".json,.csv,.xml" />
-            <button onclick="fileToHtml()">Activate</button>
-           
+             
 
-        </p>
-    </div>
-    
-    <p id="demo"></p>
+             <div class="results"></div>
+             
 
-    <script>
-            particlesJS.load('particles-js','particlesjs-config.json', function(){console.log('particles.json loaded...')})
-               </script>
-<script src="fileUpload.js"></script>
+             
+             <script src="s.js"></script>
+
+             <script>
+                particlesJS.load('particles-js','particlesjs-config.json', function(){console.log('particles.json loaded...')})
+                   </script>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

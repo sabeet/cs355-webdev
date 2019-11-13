@@ -88,3 +88,10 @@ button{
 .gs-bidi-start-align.gs-snippet{
     color:beige;
 }
+
+.a{
+    color:red;
+    font-weight:bold;
+    text-align: center;
+
+}
